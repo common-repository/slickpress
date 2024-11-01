@@ -1,0 +1,13 @@
+.elementor-element-edit-mode[data-element_type="container"]:has(.slick-initialized):after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url(../../../../../modules/manager/images/icon.png);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

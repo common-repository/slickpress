@@ -1,0 +1,212 @@
+.tab a.active {
+  background-color: #f0f0f1;
+}
+
+.wpsp-form-group {
+  display: none;
+}
+
+.wpsp-form-group.active {
+  display: block;
+}
+
+#toplevel_page_wpsp-settings img {
+  width: 30px;
+  height: 30px;
+  padding: 3px 0px 0px 0px !important;
+}
+
+/* ================= */
+
+.slick-option-settings:has( #modules.active, #licenses.active) .submit {
+    display: none;
+}
+
+.wpsp-cards {
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.wpsp-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-width: 500px;
+  background-color: #ffffff;
+      display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wpsp-card-body,
+.wpsp-card-content {
+  padding: 15px;
+}
+
+/* .wpsp-card-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+} */
+
+ .wpsp-card-icon {
+  margin-right: 15px;
+  flex: 30%;
+}
+
+.wpsp-card-content {
+  flex: 70%;
+}
+
+ .wpsp-card-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.wpsp-card-body {
+  display: flex;
+  align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.wpsp-card .wpsp-card-icon img {
+  width: 100%;
+  /* max-width: 50px; */
+}
+
+.wpsp-card .wpsp-card-title {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.wpsp-card .wpsp-card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.wpsp-card-actions {
+  /* background-color: #f1f1f1; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    }
+
+.wpsp-card-actions label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.wpsp-card-actions input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* =================== */
+
+.wpsp-card-actions .switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.wpsp-card-actions .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.wpsp-card-actions .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.wpsp-card-actions .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.wpsp-card-actions input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.wpsp-card-actions input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.wpsp-card-action {
+    display: inline-block;
+}
+
+.wpsp-upgrade-btn{
+  --primary: #31b700;
+}
+.wpsp-download-btn{
+  --primary: #007ffc;
+}
+.wpsp-activate-btn{
+  --primary: #008c5e;
+}
+.wpsp-deactivate-btn{
+  --primary: #fc3f00;
+}
+
+button.wpsp-ext-card-btn {
+    border: 1px solid;
+    padding: 7px 12px;
+    border-radius: 20px;
+    color: var(--primary);
+    background-color: white;
+    cursor: pointer;
+}
+
+button.wpsp-ext-card-btn:hover{
+   color: #fff;
+    background-color: var(--primary); 
+}
+
+.slick-option-settings #licenses .form-row {
+    padding-top: 10px;
+}
+
+.slick-option-settings #licenses .ls-active{
+    color: green;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.slick-option-settings #licenses .ls-inactive{
+    color: red;
+     font-size: 18px;
+    padding: 20px;
+}
+
+.slick-option-settings #elementor .form-row {
+    padding: 20px 10px;
+    display: flex;
+    gap: 10px;
+}
